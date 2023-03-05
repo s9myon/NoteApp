@@ -14,7 +14,7 @@ class AddNote(
             throw InvalidNoteException("The title of the note can't be empty.")
         }
         if (note.content.isBlank()) {
-            throw InvalidNoteException("The title of the note can't be empty.")
+            throw InvalidNoteException("The content of the note can't be empty.")
         }
         repository.insertNote(note)
     }
